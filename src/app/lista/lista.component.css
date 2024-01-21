@@ -1,0 +1,46 @@
+.contenedor-listaComponent{
+    float: left;
+}
+.contenedor-personaje{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+    align-items: center;
+    background-color: #e2c15c;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: black;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    transition: all .2s ease-in-out;
+}
+.contenedor-personaje:hover{
+    transform: scale(1.07);
+}
+.imagen{
+    margin: 10px;
+    width: 20%;
+    height: 20%;
+    padding: 5px;
+    border-width: 4px;
+    border-style: dashed;
+    border-color: black;
+    border-radius: 20px;
+}
+.datos{
+    display: flex;
+    flex-direction: column;
+    font-family: papyrus;
+    font-size: x-large;
+    font-weight: 500;
+    margin-left: 70px;
+}
+.datos-basicos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* background-color: white; */
+}

@@ -1,0 +1,33 @@
+<!-- <p *ngFor="let nombre of listaDeNombres">{{nombre}}</p> -->
+<div class="contenedor-listaComponent">
+    <main>
+        <section *ngFor="let personaje of listaDePersonajes" class="contenedor-personaje">
+            <img class="imagen" [src]="personaje.imagen">
+            <!-- <p *ngFor="let nombre of listaDeNombres">{{nombre}}</p> -->
+            <div class="datos">
+                <div class="datos-basicos">
+                    <span><b>Nombre:</b> <br>{{personaje.nombre}}</span>
+                    <span><b>Edad:</b> <br>{{personaje.edad}}</span>
+                </div>
+                <span><b>Descripción:</b> <br>{{personaje.descripcion}}</span>
+            </div>
+        </section>
+        <!-- <section class="contenedor-personaje">
+            <img class="imagen" [src]="imagen7">
+        </section>
+        <section class="contenedor-personaje">
+            <img class="imagen" [src]="imagen8">
+        </section>
+        <section class="contenedor-personaje">
+            <img class="imagen" [src]="imagen9">
+        </section>
+        <section class="contenedor-personaje">
+            <img class="imagen" [src]="imagen10">
+        </section> -->
+    </main>
+</div>
+<!-- <img [src]="imagen6">
+<img [src]="imagen7">
+<img [src]="imagen8">
+<img [src]="imagen9">
+<img src="/assets/images/10.png" alt=""> -->

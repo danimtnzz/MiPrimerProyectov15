@@ -1,0 +1,10 @@
+<h1>Piedra Papel Tijera</h1>
+
+<button (click)="realizarJugada('piedra')">Piedra</button>
+<button (click)="realizarJugada('papel')">Papel</button>
+<button (click)="realizarJugada('tijeras')">Tijeras</button>
+
+<div *ngIf="jugadaMaquina">
+    <p>La máquina eligió: {{ jugadaMaquina }}</p>
+    <p>Resultado: {{ resultadoJuego }}</p>
+</div>
