@@ -3,7 +3,7 @@
     <div *ngIf = "valor == 1;else vacio" class = "circulo ambar"></div>
     <div *ngIf = "valor == 0;else vacio" class = "circulo verde"></div>
     <span class = "cuenta-atras">{{valor}}</span>
-    <button (click) = "sumar()">+1</button>
+    <button mat-flat-button color="primary" (click) = "sumar()">+1</button>
 </div>
 <ng-template #vacio>
         <div class = "circulo blanco"></div>

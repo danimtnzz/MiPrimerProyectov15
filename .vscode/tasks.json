@@ -37,6 +37,19 @@
           }
         }
       }
+    },
+    {
+      "label": "ngServe",
+      "type": "npm",
+      "script": "start",
+      "isBackground": true,
+      "runOptions": {
+        "runOn": "folderOpen"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
     }
   ]
 }

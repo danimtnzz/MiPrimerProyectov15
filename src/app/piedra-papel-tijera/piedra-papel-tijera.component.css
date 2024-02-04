@@ -1,0 +1,107 @@
+.contenedor-general{
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+.vidas {
+    width: 70%;
+    animation: latir 4s infinite;
+    display: flex;
+    justify-content: space-between;
+}
+
+.corazonesJugador{
+    display: flex;
+    flex-direction: row;
+}
+.corazonesMaquina{
+    display: flex;
+    flex-direction: row;
+}
+
+.consola{
+    width: 400px;
+    height: 200px;
+    background-color: grey;
+    padding: 10px;
+    color: white;
+}
+.selecciones{
+    width: 300px;
+    height: 100px;
+    background-color: grey;
+}
+.eleccion{
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    background-color: aliceblue;
+    animation: latir 4s infinite;
+}
+.eleccion:hover{
+    background-color: rgb(43, 151, 245);
+    cursor: pointer;
+    background-color: aliceblue;
+}
+.piedra{
+    background-image: url('/assets/images/piedrapng.png');
+    background-size: cover;
+}
+.papel{
+    background-image: url(/assets/images/papel.png);
+    background-size: cover;
+}
+.tijeras{
+    /* background-image: url(/assets/images/tijeras.png); */
+    background-image: url(../../assets/images/tijeras.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+@media only screen and (max-width:500px) {
+    .consola{
+        width: 200px;
+    }
+}
+@keyframes latir {
+    0%{
+        transform: scale(0.9), translate(500px, 0px);
+        /* width: 80px;
+        height: 80px; */
+    }
+    50%{
+        transform: scale(1.1);
+        /* background-color: chocolate; */
+    }
+    100%{
+        /* width: 85px;
+        height: 85px;
+        margin: 0px; */
+        transform: scale(0.9), translate(0px, 0px);
+        /* background-color: violet; */
+    }
+}
+.imagen-maquina {
+    width: 100px;  /* Ajusta el tamaño según tus necesidades */
+    height: 100px; /* Ajusta el tamaño según tus necesidades */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 10px;  /* Ajusta el margen según tus necesidades */
+    animation: aparecer 1s ease-out;  /* Define la animación de aparecer */
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
