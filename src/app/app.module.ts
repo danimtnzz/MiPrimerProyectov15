@@ -14,6 +14,8 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { Page404Component } from './page404/page404.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     SemaforoComponent,
     ListaComponent,
     PiedraPapelTijeraComponent,
-    PruebaMaterialComponent
+    PruebaMaterialComponent,
+    LandingPageComponent,
+    Page404Component
   ],
   imports: [
     BrowserModule,

@@ -36,6 +36,7 @@ export class PiedraPapelTijeraComponent implements OnInit {
     this.elecciones[eleccionMaquina];
 
     this.texto2 = 'La máquina ha elegido: ' + this.elecciones[eleccionMaquina];
+    this.eleccionMaquina = this.elecciones[eleccionMaquina];
     if (this.vidasJugador && this.vidasMaquina != 0) {
       if (
         (eleccion == 'tijeras' && this.elecciones[eleccionMaquina] == 'papel') ||

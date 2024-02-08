@@ -9,7 +9,6 @@
     <p>Resultado: {{ resultadoJuego }}</p>
 </div> -->
 <section class="contenedor-general">
-    <mat-toolbar color="primary">Piedra, papel o tijera</mat-toolbar>
     <div class="vidas">
         <div class="corazonesJugador">
             <h3>Vidas Jugador</h3>
@@ -24,17 +23,12 @@
         {{texto}} <br>
         {{texto2}} <br>
         {{texto3}}
-    </div>
-    <div *ngIf="eleccionMaquina">
-        <p>La máquina eligió:</p>
-        <div class="imagen-maquina" [ngClass]="{'piedra': eleccionMaquina === 'piedra', 'papel': eleccionMaquina === 'papel', 'tijeras': eleccionMaquina === 'tijeras'}">
-            <img *ngIf="eleccionMaquina === 'piedra'" src="../../assets/images/piedrapng.png" alt="Piedra">
-            <img *ngIf="eleccionMaquina === 'papel'" src="../../assets/images/papel.png" alt="Papel">
-            <img *ngIf="eleccionMaquina === 'tijeras'" src="../../assets/images/tijeras.png" alt="Tijeras">
+        <div class="imagen-maquina">
+          <img *ngIf="eleccionMaquina === 'piedra'" src="/assets/images/piedrapng.png">
+          <img *ngIf="eleccionMaquina === 'papel'" src="/assets/images/papel.png">
+          <img *ngIf="eleccionMaquina === 'tijeras'" src="/assets/images/tijeras.png">
         </div>
-        <p>Resultado: {{ texto3 }}</p>
     </div>
-    
     <div class="selecciones">
         <div (click)="elegir('piedra')" class="eleccion piedra"></div>
         <div (click)="elegir('papel')" class="eleccion papel"></div>

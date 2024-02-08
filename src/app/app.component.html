@@ -1,4 +1,13 @@
 <!-- <app-semaforo></app-semaforo> -->
 <!-- <app-lista></app-lista> -->
 <!-- <app-prueba-material></app-prueba-material> -->
-<app-piedra-papel-tijera></app-piedra-papel-tijera>
+<!-- <app-piedra-papel-tijera></app-piedra-papel-tijera> -->
+
+<mat-toolbar color="primary">
+    <div class="opcion" routerLink="/piedra-papel-tijera">Piedra papel tijera</div>
+    <div class="opcion" routerLink="/lista-personajes">Personajes</div>
+    <div class="opcion" routerLink="/semaforo">Semaforo</div>
+    <div class="opcion" routerLink="/prueba-material">Prueba material</div>
+    <div class="opcion" (click)="cambiarRuta()">Ruta aleatoria</div>
+</mat-toolbar>
+<router-outlet></router-outlet>

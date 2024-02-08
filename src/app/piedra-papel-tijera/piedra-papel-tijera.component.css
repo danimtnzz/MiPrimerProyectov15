@@ -86,13 +86,17 @@
     }
 }
 .imagen-maquina {
-    width: 100px;  /* Ajusta el tamaño según tus necesidades */
-    height: 100px; /* Ajusta el tamaño según tus necesidades */
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-top: 10px;  /* Ajusta el margen según tus necesidades */
-    animation: aparecer 1s ease-out;  /* Define la animación de aparecer */
+ 
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagen-maquina img{
+    max-width: 100px;
+    max-height: 100px;
+    margin: 10px;  
+    animation: aparecer 1s ease-out;  
 }
 
 @keyframes aparecer {
