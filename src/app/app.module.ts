@@ -16,6 +16,9 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { Page404Component } from './page404/page404.component';
+import { ListaTarjetasComponent } from './lista-tarjetas/lista-tarjetas.component';
+import { TarjetaComponent } from './tarjeta/tarjeta.component';
+import { TrunioComponent } from './trunio/trunio.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import { Page404Component } from './page404/page404.component';
     PiedraPapelTijeraComponent,
     PruebaMaterialComponent,
     LandingPageComponent,
-    Page404Component
+    Page404Component,
+    ListaTarjetasComponent,
+    TarjetaComponent,
+    TrunioComponent
   ],
   imports: [
     BrowserModule,

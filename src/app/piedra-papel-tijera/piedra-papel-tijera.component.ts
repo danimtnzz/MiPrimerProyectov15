@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-piedra-papel-tijera',
@@ -9,6 +10,7 @@ export class PiedraPapelTijeraComponent implements OnInit {
   texto: string = '';
   texto2: string = '';
   texto3: string = '';
+  nombre:string = '';
   eleccionMaquina: string = '';
   vidasJugador: number = 5;
   vidasMaquina: number = 5;
@@ -16,13 +18,24 @@ export class PiedraPapelTijeraComponent implements OnInit {
 
   elecciones: string[] = ['piedra', 'papel', 'tijeras'];
 
+  constructor(private route:ActivatedRoute){
+
+  }
+
   vidasJugadorArray: number[] = [];
   vidasMaquinaArray: number[] = [];
 
   ngOnInit(): void {
     this.texto =
-      'Hola, bienvenido a Piedra, papel o tijera! Realiza tu elección';
+      'Hola, bienvenido '+ this.nombre + ' a Piedra, papel o tijera! Realiza tu elección';
     this.actualizarVidasArrays();
+    this.route.params.subscribe(
+      params => {
+        this.nombre = params['nick'];
+        this.texto =
+        'Hola, bienvenido '+ this.nombre + ' a Piedra, papel o tijera! Realiza tu elección';
+      }
+    )
   }
 
   elegir(eleccion: string) {
